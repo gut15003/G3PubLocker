@@ -72,3 +72,9 @@ That is if you start at the first or 1st then you need to do 4th,
 but if you start at 3rd then you need to do the 6th.
 
 You must put them in this file!
+
+* UCA
+Start your Excercise warmup by thinking up examples and three non-examples of propositions. Make them pithy.
+
+|Examples: | Dogs are mammals | I am a Human | Math is logical|
+|Non-examples| Tuesday| cats are dogs| when is your lunch|
