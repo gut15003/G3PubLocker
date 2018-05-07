@@ -17,8 +17,9 @@ Goblins only lie.
 A says: B is a unicorn.
 B says: A and I are opposite type.
 
-What is A:
-What is B:
+What is A: A Goblin
+
+What is B: A Goblin
 
 * TODO 8 duds and 1 armed bomb.
 Some idiot forgot to disarm a bomb that is laid in the 'decomisioned' bomb pile.
