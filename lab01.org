@@ -53,13 +53,13 @@ No option in any category will ever be used more than once.
 Solution
 
 | Shoe Sizes | Customers | Brands | Prices |
-|          4 |           |        |        |
-|          5 |           |        |        |
-|          6 |           |        |        |
-|          7 |           |        |        |
-|          8 |           |        |        |
-|          9 |           |        |        |
-|         10 |           |        |        |
+|          4 |Marie|Grafeetz|$185|
+|          5 |Vanessa|Schtillet|$215|
+|          6 |Lucia|Cormano|$155|
+|          7 |pPerson|Tinghill|$260|
+|          8 |Natalie|Williford|$125|
+|          9 |Francine|Manzarita|$245|
+|         10 |Ruth|Abbott|$170|
 
 * TODO Exercises
 In 01-ponder do every third exercise. 
