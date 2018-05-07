@@ -28,6 +28,10 @@ To add insult to injury we don't know if the armed bomb weighs less or more on t
 But there is yet another catch the weighing system only have two charges left, but it can weight any number of bombs at once.
 Your job is to tell which 1 bomb out of the 9 bombs is armed while only using the weighing machine twice.
 
+Assuming that the bomb is heavier: weight two sets of three on the scale. take the three that weighted heavier or the three not wieghted if they weigh the same. then weigh the two bombs of the taken set: the bomb is the heavier one or the one not weighted if they weigh the same. 
+
+Assuming the bomb is lighter: repeat above but replace 'Heavier' with 'lighter'.
+
 * TODO The BEAST
 The Shoe Shack has made several top-dollar sales today. 
 Using only the clues below, match each customer to their foot size, 
@@ -68,14 +72,3 @@ That is if you start at the first or 1st then you need to do 4th,
 but if you start at 3rd then you need to do the 6th.
 
 You must put them in this file!
-
-* DO NOT INCLUDE THIS PART BELOW FOR THE LAB
-* ######## FOR PUZZLES AND PROJECTS #########
-A more Brother Neff-like assignment, with a Brother Benning twist!
-
-Please Complete all Problems and Puzzles including the 'optional ones', but skipping the exercises.
-I would recommend working together.  As always I will give out hints
-periodically.
-
-(NOTE:I would keep all your exercises/problems/puzzles you do, if you
-take DM 2, you may find these extreeeeeeeeeemly helpful, or not)
