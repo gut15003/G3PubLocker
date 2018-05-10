@@ -57,14 +57,14 @@ No option in any category will ever be used more than once.
 
 Solution
 
-| Shoe Sizes | Customers | Brands | Prices |
-|          4 |Marie|Grafeetz|$185|
-|          5 |Vanessa|Schtillet|$215|
-|          6 |Lucia|Cormano|$155|
-|          7 |pPerson|Tinghill|$260|
-|          8 |Natalie|Williford|$125|
-|          9 |Francine|Manzarita|$245|
-|         10 |Ruth|Abbott|$170|
+| Shoe Sizes | Customers | Brands    | Prices |
+|          4 | Marie     | Grafeetz  | $185   |
+|          5 | Vanessa   | Schtillet | $215   |
+|          6 | Lucia     | Cormano   | $155   |
+|          7 | pPerson   | Tinghill  | $260   |
+|          8 | Natalie   | Williford | $125   |
+|          9 | Francine  | Manzarita | $245   |
+|         10 | Ruth      | Abbott    | $170   |
 
 * TODO Exercises
 In 01-ponder do every third exercise. 
@@ -76,5 +76,111 @@ You must put them in this file!
 * UCA
 Start your Excercise warmup by thinking up examples and three non-examples of propositions. Make them pithy.
 
-|Examples: | Dogs are mammals | I am a Human | Math is logical|
-|Non-examples| Tuesday| cats are dogs| when is your lunch|
+| Examples:    | Dogs are mammals | I am a Human  | Math is logical    |
+| Non-examples | Tuesday          | cats are dogs | when is your lunch |
+
+* OGR 
+  Which of the following are simple (not compound) propositions?
+
+  1. Weeks are shorter than months.
+  2. Days are longer than hours and minutes.
+  3. Hours are longer than minutes and seconds are shorter than minutes.
+  4. People can fly or pigs can sing.
+
+1 and 4 are both simple (not compound) propositions.
+
+* UOX
+  What other special forms besides =if= does elisp have for doing conditionals?
+  Why are they called \ldquo{}special\rdquo?
+
+  Answer:
+  | and | cond | or |
+* UIN
+#+begin_note
+  What is the set difference between the set of letters in the English alphabet
+  and the set of letters in the Hawaiian alphabet?
+#+end_note
+#+begin_info
+  (b,c,d,f,g,j,q,r,s,t,v,x,y,c)
+#+end_info
+
+* OQT
+#+begin_note
+  Let /p/ and /q/ be the propositions:
+
+  /p/: I studied.
+
+  /q/: I got an A on the test.
+
+  Express each of the propositions below as an English sentence:
+  1. /p/ \rarr /q/
+  2. \not /p/ \lor \not /q/
+  3. \not /p/ \rarr (p \lor q)
+  4. \not /p/ \rarr \not /q/
+#+end_note
+#+begin_info
+  | 1 | if you are a cat then you are a mouse                     |
+  | 2 | either you are not a cat or not a mouse                   |
+  | 3 | if you are not a cat then you are either a cat or a mouse |
+  | 4 | if you are not a cat then you are not a mouse             |
+#+end_info
+#+begin_note
+  Use truth tables to verify the associative laws.
+  1. $(p \vee q) \vee r \equiv p \vee (q \vee r)$
+  2. $(p \wedge q) \wedge r \equiv p \wedge (q \wedge r)$
+#+end_note
+#+begin_info
+1: 
+ | p | q | r | p \vee q | (p \vee q) \vee r | (q \vee r) | p \vee (q \vee r) |
+ | 0 | 0 | 0 |     0 |           0 |       0 |           0 |
+ | 0 | 0 | 1 |     0 |           1 |       1 |           1 |
+ | 0 | 1 | 0 |     1 |           1 |       1 |           1 |
+ | 0 | 1 | 1 |     1 |           1 |       1 |           1 |
+ | 1 | 0 | 0 |     1 |           1 |       0 |           1 |
+ | 1 | 0 | 1 |     1 |           1 |       1 |           1 |
+ | 1 | 1 | 0 |     1 |           1 |       1 |           1 |
+ | 1 | 1 | 1 |     1 |           1 |       1 |           1 |
+2:
+ | p | q | r | (p \wedge q) | (p \wedge q) \wedge r | (q \wedge r) | p \wedge (q \wedge r) |
+ | 0 | 0 | 0 |       0 |           0 |       0 |           0 |
+ | 0 | 0 | 1 |       0 |           0 |       0 |           0 |
+ | 0 | 1 | 0 |       0 |           0 |       0 |           0 |
+ | 0 | 1 | 1 |       0 |           0 |       1 |           0 |
+ | 1 | 0 | 0 |       0 |           0 |       0 |           0 |
+ | 1 | 0 | 1 |       0 |           0 |       0 |           0 |
+ | 1 | 1 | 0 |       1 |           0 |       0 |           0 |
+ | 1 | 1 | 1 |       1 |           1 |       1 |           1 |
+#+end_info
+
+* USL
+#+begin_note
+  Use truth tables to verify some miscellaneous laws, letting $\mathbf{1}$ =
+  true, $\mathbf{0}$ = false:
+  1. $p \land \mathbf{1} \equiv p$ (idempotence)
+  2. $p \lor \mathbf{0} \equiv p$ (idempotence)
+  3. $\lnot \lnot p \equiv p$ (double negation)
+  4. $p \land \mathbf{0} \equiv \mathbf{0}$ (absorption)
+  5. $p \lor \mathbf{1} \equiv \mathbf{1}$ (absorption)
+#+end_note
+#+begin_info
+1:
+ | p | 1 | p and 1 |
+ | 1 | 1 |       1 |
+ | 0 | 1 |       0 |
+2:
+ | p | 0 | p or 0 |
+ | 1 | 0 |      1 |
+ | 0 | 0 |      0 |
+3: 
+ | p | not p | not not p |
+ | 1 |     0 |         1 |
+ | 0 |     1 |         0 |
+4:
+  | p | 0 | p and 0 |
+  | 1 | 0 |       0 |
+  | 0 | 0 |       0 |
+5:
+  | p | 1 | p or 1 |
+  | 1 | 1 |      1 |
+  | 1 | 0 |      1 |
+#+end_info
